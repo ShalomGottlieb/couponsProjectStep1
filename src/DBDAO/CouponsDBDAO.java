@@ -17,7 +17,6 @@ import java.util.Map;
  * Customer Data base DAO class
  */
 public class CouponsDBDAO implements CouponsDAO {
-    private static final String TestADD_COUPON = "INSERT INTO `couponsDB`.`coupons` (`ID_COMPANY`,`iD_CATEGORY`,`title`,`DESCRIPTION`,`START_DATE`,`END_DATE`,`AMOUNT`,`PRICE`,`IMAGE`) VALUES (?,?,?,?,?,?,?,?,?)";
     private static final String ADD_COUPON = "INSERT INTO `couponsDB`.`coupons` (`ID_COMPANY`,`iD_CATEGORY`,`title`,`DESCRIPTION`,`START_DATE`,`END_DATE`,`AMOUNT`,`PRICE`,`IMAGE`) VALUES (?,?,?,?,?,?,?,?,?)";
     private static final String UPDATE_COUPON = "UPDATE `couponsDB`.`coupons` set `iD_CATEGORY`=?, `title`=?, `DESCRIPTION`=? ,`START_DATE`=? , `END_DATE`=? , `AMOUNT`=? , `PRICE`=? , `IMAGE`=? WHERE id=?";
     private static final String DELETE_COUPON = "DELETE FROM `couponsDB`.`coupons` where id=?";
